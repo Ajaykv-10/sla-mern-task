@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
     <Header/>
-    <section className="bg-black p-10 h-min text-white">
+    <section className="bg-black p-10 min-h-screen text-white">
     <AppRoute/>
     </section>
     </>
