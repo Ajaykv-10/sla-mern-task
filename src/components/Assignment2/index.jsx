@@ -1,5 +1,6 @@
 import StudentProfile from "./StudentProfile"
 import EmployeeCard from "./EmployeeCard"
+import Product from "./Product"
 
 const Assignment2 = () => {
 
@@ -18,6 +19,13 @@ const Assignment2 = () => {
         experience: "3 Years"
     }
 
+    const productData = {
+        productName: "iPhone 15 Pro",
+        productPrice: "₹1,34,900",
+        productCategory: "Smartphones",
+        productBrand: "Apple"
+    }
+
     return (
         <>
             <div>
@@ -28,6 +36,12 @@ const Assignment2 = () => {
                     department={employeeData.department}
                     salary={employeeData.salary}
                     experience={employeeData.experience}
+                />
+                <Product
+                    productName={productData.productName}
+                    productPrice={productData.productPrice}
+                    productCategory={productData.productCategory}
+                    productBrand={productData.productBrand}
                 />
             </div>
         </>
