@@ -2,15 +2,16 @@ import { useNavigate } from "react-router-dom"
 
 
 const Home = () => {
-    const navigate=useNavigate()
-    const handleClick=()=>{
-        navigate("/assignment-one")
-    }
+  const navigate = useNavigate()
+  const handleClick = (path) => {
+    navigate(path)
+  }
   return (
     <div className="grid grid-cols-5 gap-3">
-        <div>
-            <button onClick={handleClick} className="bg-white text-black p-3 rounded cursor-pointer">Assignment 1</button>
-        </div>
+
+      <button onClick={() => handleClick("/assignment-one")} className="bg-white text-black p-3 rounded cursor-pointer">Assignment 1</button>
+      <button onClick={() => handleClick("/assignment-two")} className="bg-white text-black p-3 rounded cursor-pointer">Assignment 2</button>
+
 
     </div>
   )
