@@ -2,6 +2,7 @@ import StudentProfile from "./StudentProfile"
 import EmployeeCard from "./EmployeeCard"
 import Product from "./Product"
 import Skills from "./Skills"
+import UserCard from "./UserCard"
 
 const Assignment2 = () => {
 
@@ -29,6 +30,13 @@ const Assignment2 = () => {
 
     const userSkills = ["HTML", "CSS", "JavaScript", "React", "Node.js"]
 
+    const userData = {
+        name: "Ajay Dev",
+        email: "ajay.dev@example.com",
+        phone: "+91 9876543210",
+        city: "Nagercoil"
+    }
+
     return (
         <>
             <div>
@@ -47,6 +55,7 @@ const Assignment2 = () => {
                     productBrand={productData.productBrand}
                 />
                 <Skills skills={userSkills} />
+                <UserCard userData={userData} />
             </div>
         </>
     )
