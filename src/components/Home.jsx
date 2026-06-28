@@ -11,6 +11,7 @@ const Home = () => {
 
       <button onClick={() => handleClick("/assignment-one")} className="bg-white text-black p-3 rounded cursor-pointer">Assignment 1</button>
       <button onClick={() => handleClick("/assignment-two")} className="bg-white text-black p-3 rounded cursor-pointer">Assignment 2</button>
+      <button onClick={() => handleClick("/assignment-three")} className="bg-white text-black p-3 rounded cursor-pointer">Assignment 3</button>
 
 
     </div>
